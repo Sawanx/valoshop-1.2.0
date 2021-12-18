@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valo-Shop</title>
+    <title>Valorant Store Checker and Tracker | Track Your Daily Valorant Store On Mobile | Check Valorant</title>
     <link rel="icon" type="image/png" href="./images/valorant.ico">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -39,11 +37,9 @@
             <img class = "agents jett" src="./images/jett.png" alt="">
 
             <div class="loginsec">
-                <h1 class="title">CHECK <br>UR PERSONAL STORE!</h1>
-                <h4 class="subtitle">LOGIN TO CHECK YOUR PERSONAL STORE.</h4>
-                <p class = "subtext">Our Valorant store changes daily. We have to open
-                    the game in order to check what's awaiting us.<br><br>But we have a solution for u.
-                </p>
+                <h1 class="title">Valorant Store Checker</h1>
+                <p class = "subtext">You don't have to open the game just to check your daily store rotation. You can do that right here.</p>
+                <h4 class="subtitle">LOGIN TO CHECK YOUR IN-GAME STORE.</h4>
                 <div class="inpbt">
                      <form id='login' class="form">
                          
@@ -54,8 +50,6 @@
                             <select name="region" id="region" required>
                                 <option value="" disabled selected hidden>Choose Region</option>
                                 <option value="na">NA</option>
-                                <option value="latam">LATAM</option>
-                                <option value="br">BR</option>
                                 <option value="eu">EU</option>
                                 <option value="kr">KR</option>
                                 <option value="ap">AP</option>
@@ -77,82 +71,38 @@
         <h2 class='title'> Frequently Asked Questions </h2>
         <div class='item-container'>
             <div class='item'>
-                <p class='qus '>DSgccd gff?</p>
-                <p class='ans hide'>Sjkjdada;'ajdna?vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    ACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso</p>
+                <p class='qus '>What is my Riot ID?</p>
+                <p class='ans hide'>Your Riot ID is a unique username that you use to login, like AryanBa3a, and not your display name, like Ba3a#5807.</p>
             </div>
             <div class='item'>
-                <p class='qus'>vSjkjdada;'ajdna?</p>
-                <p class='ans hide'>vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk fvACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
+                <p class='qus'>Why do you need my password?</p>
+                <p class='ans hide'>We need your password in order to get your store data from Riot Games. Please note that sharing just your password does not endanger your account. Learn more here.
                 </p>
             </div>
             <div class='item'>
-                <p class='qus'>Sjkjdada;'ajdna?</p>
-                <p class='ans hide'>
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    ACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
+                <p class='qus'>Can I check my store without entering password?</p>
+                <p class='ans hide'>Yes, we have designed our system such that you can still use our services without sharing your password with us. Learn more about Passwordless login here.
                 </p>
             </div>
             <div class='item'>
-                <p class='qus'>Sjkjdada;'ajdna?</p>
-                <p class='ans hide'>
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f</p>
+                <p class='qus'>Where do I get help?</p>
+                <p class='ans hide'>You can tweet us at @Ba3a_Gamzo / @Sawan.</p>
             </div>
             <div class='item'>
-                <p class='qus'>Sjkjdada;'ajdna?</p>
-                <p class='ans hide'>
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                </p>
+                <p class='qus'>When does the Valorant store reset?</p>
+                <p class='ans hide'>The in-game Valorant store resets every 24 hours at 1:00 am UTC / 8:00 pm EST / 6:30 am IST. The store is randomly generated for each Valorant player.</p>
             </div>
             <div class='item'>
-                <p class='qus'>Sjkjdada;'ajdna?</p>
-                <p class='ans hide'>
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    ACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                </p>
+                <p class='qus'>Can I purchase weapon skins from this website?</p>
+                <p class='ans hide'>No, you can not purchase weapon skins direcly from this website. However, we show everything else about the skins that you get in store, like cost (VP) and finisher video.</p>
             </div>
             <div class='item hide'>
-                <p class='qus'>Sjkjdada;'ajdna?</p>
-                <p class='ans hide'>
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    ACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                </p>
+                <p class='qus'>Are battlepass skins included in the store rotation?</p>
+                <p class='ans hide'>No, battlepass skins are not included in the store rotation.</p>
             </div>
             <div class='item hide'>
-                <p class='qus'>Sjkjdada;'ajdna?</p>
-                <p class='ans hide'>
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    ACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                </p>
-            </div>
-            <div class='item hide'>
-                <p class='qus'>Sjkjdada;'ajdna?</p>
-                <p class='ans hide'>sd fsdfn.js  sec brwgaekfesdjkfsfksn vsfishfesen sf isuehfsn vsdfjkdfh sfslefh seklf nsfsefbsilef
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk fbsbefsbfs jbfksbef sbskefb s
-                </p>
-            </div>
-            <div class='item hide'>
-                <p class='qus'>dsf sdf smfms?</p>
-                <p class='ans hide'>fsdf zlmdfd;
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    lfskdjfn sldf sfljdbsjlcsdbnsl dfshjdfb sdklfjs df;slkdjf shjkfshe fskjehfsiuebfsjndjfkl
-                </p>
-            </div>
-            <div class='item hide'>
-                <p class='qus'>HAD a kdada?</p>
-                <p class='ans hide'>ACDb hasgjdf
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                    vACDb hasgjdfkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk fkslfjsdfjsem s ejkf lws/fjdskl;dfjsdf nskfmskl.dfm sdkjfsdlfjso ,dfks dfslkdf jvsdjf s;dlfkj svdlk f
-                </p>
+                <p class='qus'>Are agent contract skins included the rotation?</p>
+                <p class='ans hide'>No, agent contract skins are exclusive and are not included in the daily store rotation.</p>
             </div>
         </div>
         <div class='menu'>
@@ -164,10 +114,7 @@
     <footer class="footer">
         <div class="footer-content">
             <h2>About Us</h2>
-            <p>bfh hdlgdj,v igok .dfkgc .sofdfg.lgfv jk.vsd,fcsl .v,ksjfsfkg
-                djhhgkdfcmsdlf ,mkdbhgfddcjmkll. dv;slkf,gj sdvhfgdbcmn jfdjcmhs
-                jdbfhd jkm,lvmjhdnsfkmd,lasdas
-                asdfabhsnjmdk,a
+            <p>We are a bunch of gamers who also know how to code. We had used some other Valorant Store Chceker tool earlier which has been shut down. So, we felt the need and decided to make a tool for ourselves. And now we have decided to make this tool public.
             </p>
     
             <h2>Contact Us</h2>
@@ -178,7 +125,7 @@
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>&copy;2021 S44WN & BA3A. designed by <span>S44WN</span></p>
+            <p>&copy; belongs to original holders. Not affiliated with Riot Games.</p>
         </div>
     </footer>
     <div class="preloader">
@@ -188,7 +135,7 @@
         </svg>
     </div>
 
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="./js/login.js"></script>
+<script defer src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer src="./js/login.js"></script>
 </body>
 </html>
