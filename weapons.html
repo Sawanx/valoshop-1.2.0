@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>today's store</title>
+    <link rel="icon" type="image/png" href="./images/valorant.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style-weapons.css">
+</head>
+
+<body > 
+    <div class="container">
+		<h1 class="usr_title">Hey, <span id="uname">User</span><br>You got some cool stuff. CHEERS!!</h1>
+        <ul class="cards">
+			<li>
+				<div href="" class="card">
+					<img src="" class="card__image" id='weapon1' alt="" />
+					<div class="card__overlay">
+						<div class="card__header">
+							<div class="card__header-text">
+								<h3 class="card__title" id='name1'>Ruination Phantom</h3>
+								<span class="card__status">2,175 vp</span>
+							</div>
+							<div class="finisher" id='vid1' >
+								<a onclick="finisherPlay();"><i class="fas fa-play"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li>
+				<div href="" class="card">
+					<img src=" " class="card__image" id='weapon2' alt="" />
+					<div class="card__overlay">
+						<div class="card__header">
+							<div class="card__header-text">
+								<h3 class="card__title" id='name2'>Ion Operator</h3>
+								<span class="card__status">1,775 vp</span>
+							</div>
+							<div class="finisher" id='vid2'>
+									<a onclick="finisherPlay();"><i class="fas fa-play"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div href="" class="card">
+					<img src="" class="card__image" id='weapon3' alt="" />
+					<div class="card__overlay">
+						<div class="card__header">
+							<div class="card__header-text">
+								<h3 class="card__title" id='name3'>Elder-flame Vandal</h3>
+								<span class="card__status">2,475 vp</span>
+							</div>
+							<div class="finisher" id='vid3'>
+									<a onclick="finisherPlay();"><i class="fas fa-play"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div href="" class="card">
+					<img src="" class="card__image" id='weapon4' alt="" />
+					<div class="card__overlay">
+						<div class="card__header">
+							<div class="card__header-text">
+								<h3 class="card__title" id='name4'>Prime Classic</h3>
+								<span class="card__status">1,775 vp</span>
+							</div>
+							<div class="finisher" id='vid4'>
+									<a onclick="finisherPlay();"><i class="fas fa-play"></i></a>
+							</div>
+						</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="finisher_vid" id="fin_vid" onclick="finisherClose();">
+		<div class="finisher_vid_cl">
+		<i onclick="finisherClose();" class="fas fa-times"></i>
+		<video src=" " id="fvid" controls autoplay></video>
+		</div>							
+	</div>
+<script src="./js/weapons.js"></script>
+</body>
+</html>

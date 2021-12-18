@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+:root {
+  --surface-color: #ff4457;
+  --curve: 30;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  background-image: url(../images/valbackgrnd.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.container {
+  color: #faf3ea;
+  padding: 4% 2%;
+  width: 100%;
+  height: auto;
+}
+
+.container .usr_title {
+  text-align: center;
+  font-family: 'Ropa sans', Helvetica;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  color: #ff4457;
+  padding: 10px 2% 40px 2%;
+  width: 100%;
+}
+
+.container .usr_title span{
+  color: #beb1b1;
+  font-size: 2rem;
+}
+
+.container .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 0rem 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container .card {
+  position: relative;
+  display: block;
+  height: 100%;
+  min-height: 60vh;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(9px) saturate(100%);
+  -webkit-backdrop-filter: blur(9px) saturate(100%);
+  background-color: rgba(17, 25, 40, 0.68);
+}
+
+.container .card__image {
+  width: 100%;
+  height: auto;
+  padding: 150px 0px 150px 0px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.container .card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+}
+
+.container .card__overlay .card__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  font-family: 'Poppins', Helvetica;
+  font-weight: bold;
+}
+
+.container .card__overlay .card__header .card__header-text{
+  width: 70%;
+
+}
+.container .card__overlay .card__header .card__header-text .card__title {
+  font-size: 1.3em;
+  margin: 0 0 .3em;
+  color: #070606;
+}
+
+.container .card__overlay .card__header .card__header-text .card__status {
+  font-size: 1.1em;
+  color: #2c2827;
+}
+
+.container .card__overlay .card__header .finisher{
+  position: absolute;
+  right : 40px;
+}
+
+.container .card__overlay .card__header .finisher i{
+  font-size: 1.8rem;
+  color: #070606;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.container .card__overlay .card__header .finisher i:hover{
+  color: #9c6868;
+  transform: scale(1.3);
+}
+
+
+.finisher_vid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: rgba(255, 119, 101, 0.473);
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.finisher_vid .finisher_vid_cl {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  overflow: visible;
+  border: 50px soli white;
+}
+
+.finisher_vid .finisher_vid_cl i{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  filter: invert(1);
+  z-index: 1002;
+}
+
+
+.finisher_vid video{
+  position: relative;
+  max-width: 900px;
+  outline: none;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 991px) {
+  .finisher_vid video{
+    max-width: 90%;
+  }
+
+  .finisher_vid .finisher_vid_cl i{
+    top: 10px;
+    right: 7%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    filter: invert(1);
+  }
+}
