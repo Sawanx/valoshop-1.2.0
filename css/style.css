@@ -146,13 +146,18 @@ body {
 }
 
 .main_container .agents {
-  width: 28%;
+  width: 25%;
   min-width: 300px;
   height: auto;
   opacity: 0.9;
 }
 
+/* .main_container .jett {
+
+} */
+
 .main_container .phoenix {
+
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
@@ -160,7 +165,7 @@ body {
 .main_container .loginsec {
   width: 450px;
   padding: 0 2%;
-  color: #f8ecda;
+  color: #f3f0ea;
   z-index: 102;
 }
 
@@ -177,13 +182,17 @@ body {
   font-family: 'Ropa sans', Helvetica;
   font-size: 1.5em;
   padding-top: 20px;
+  padding-bottom: 50px;
+  font-weight: bolder;
+  
 }
 
 .main_container .loginsec .subtext {
   font-family: 'Ropa sans', Helvetica;
-  padding-top: 10px;
-  font-size: 1.1em;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #e6e6e6;
 }
 
 .main_container .loginsec .inpbt {
@@ -286,12 +295,17 @@ body {
   padding: 70px 0;
 }
 
+.faq_sec .faq .title {
+  padding-bottom: 30px;
+}
+
 .faq_sec .faq {
   width: 80%;
   margin: auto;
   text-align: center;
   padding: 5% 0;
   font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 .faq_sec .faq a {
@@ -315,7 +329,7 @@ body {
 }
 
 .faq_sec .faq .item-container .item {
-  margin: 12px 0;
+  margin: 20px 0;
   font-size: 24px;
   border-bottom: 1px solid #7a7a7a;
 }
@@ -465,6 +479,7 @@ footer .footer-content p {
   margin: 10px auto;
   line-height: 28px;
   font-size: 16px;
+  padding: 0 10px;
 }
 
 footer .footer-content .socials {
@@ -511,6 +526,7 @@ footer .footer-bottom p {
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
+  padding: 10px 8px 8px 5px;
 }
 
 footer .footer-bottom span {
@@ -518,6 +534,11 @@ footer .footer-bottom span {
   color: #dd6d5e;
   font-weight: 900;
   opacity: 1;
+  text-decoration: none;
+}
+
+footer .footer-bottom a {
+  text-decoration: none;
 }
 
 .preloader {
@@ -587,7 +608,7 @@ footer .footer-bottom span {
 @media screen and (max-width: 800px) {
   .main_container .agents {
     position: absolute;
-    opacity: 0.7;
+    opacity: 0.5;
   }
   .main_container .jett {
     display: none;
